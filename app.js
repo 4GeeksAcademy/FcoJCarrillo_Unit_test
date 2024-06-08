@@ -5,20 +5,21 @@ let oneEuroIs = {
 }
 
 
-const fromDollarToYen = (num) => {
-    let euroToDolar= num*oneEuroIs.USD;
-    return euroToDolar * oneEuroIs.JPY;
+const fromDollarToYen = (dolars) => {
+
+    let oneDolar = dolars / oneEuroIs.USD;
+    return oneDolar * oneEuroIs.JPY;
 }
 
 
-const fromEuroToDollar = (num) => {
-    return num*oneEuroIs.USD;
+const fromEuroToDollar = (euro) => {
+    return euro*oneEuroIs.USD;
 }
     
     
-const fromYenToPound = (num) => {
-    let euroToYen= num*oneEuroIs.JPY;
-    return euroToYen * oneEuroIs.GBP;
+const fromYenToPound = (yen) => {
+    let oneYen= yen/oneEuroIs.JPY;
+    return oneYen * oneEuroIs.GBP;
 }
         
 
